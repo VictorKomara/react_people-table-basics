@@ -17,6 +17,8 @@ export const PeopleTable = () => {
 
   useEffect(() => {
     setLoading(true);
+    setError('');
+
     getPeople()
       .then(setPeople)
       .catch(() => {
